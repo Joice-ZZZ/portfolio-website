@@ -13,10 +13,10 @@ function sendmail() {
     emailjs.send("service_9my9i51", "template_e8lnsul", params)
         .then(function(response) {
             console.log("SUCCESS!", response.status, response.text);
-            alert("Email sent successfully!");
+            //alert("Email sent successfully!");
         }, function(error) {
             console.log("FAILED...", error);
-            alert("Failed to send email. Please try again later: " + JSON.stringify(error));
+            //alert("Failed to send email. Please try again later: " + JSON.stringify(error));
         });
     
     return false; // Prevent form submission
